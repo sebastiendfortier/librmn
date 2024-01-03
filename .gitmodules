@@ -1,8 +1,0 @@
-[submodule "cmake_rpn"]
-	path = cmake_rpn
-	url = ../cmake_rpn.git
-	branch = dev
-[submodule "App"]
-	path = App
-	url = ../App.git
-	branch = master
