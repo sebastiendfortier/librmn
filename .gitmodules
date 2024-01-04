@@ -1,6 +1,7 @@
 [submodule "cmake_rpn"]
 	path = cmake_rpn
 	url = https://github.com/sebastiendfortier/cmake_rpn.git
+        branch = dev
 [submodule "App"]
 	path = App
 	url = https://github.com/sebastiendfortier/App.git
