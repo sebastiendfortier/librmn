@@ -1,7 +1,7 @@
 #----- Compiled object/library files
 *.o
 *.a
-
+*.diff
 #----- Editor pattern
 *.sw[po]
 *~
@@ -10,3 +10,5 @@
 /build*
 /.vscode/
 /*.code-workspace
+
+pixi.lock

@@ -23,8 +23,8 @@ cmd = ["mkdir", "-p", "build"]
 cwd = "." 
 
 [tasks.cmake]
-cmd = ["bash", "-c", "unset EC_ARCH && cmake ../. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=install -DCOMPILER_SUITE=GNU -DCMAKE_MODULE_PATH=.."]
-cwd = "build"
+cmd = ["bash", "-c", "unset EC_ARCH && cd build && rm -f CMakeCache.txt && cmake ../ -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=install -DCOMPILER_SUITE=GNU -DCMAKE_PREFIX_PATH=$CONDA_PREFIX -DWITH_OMPI=FALSE"]
+cwd = "."
 depends-on = ["configure"]
 
 [tasks.build]
